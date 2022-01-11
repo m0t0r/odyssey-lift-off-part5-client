@@ -5,7 +5,7 @@ import Pages from './pages';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000',
+  uri: 'https://server-apollo-catstronauts17.herokuapp.com/',
   cache: new InMemoryCache(),
 });
 
@@ -14,5 +14,5 @@ ReactDOM.render(
     <GlobalStyles />
     <Pages />
   </ApolloProvider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
